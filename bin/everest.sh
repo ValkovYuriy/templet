@@ -1,10 +1,10 @@
 #!/bin/sh
 
-curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
-/srv/conda/envs/everest/bin/python2 get-pip.py
+curl https://bootstrap.pypa.io/pip/3.2/get-pip.py -o get-pip.py
+/srv/conda/envs/everest/bin/python3 get-pip.py
 rm get-pip.py
 
-/srv/conda/envs/everest/bin/python2 -m pip install tornado==4.5.3
+/srv/conda/envs/everest/bin/python3 -m pip install tornado==4.5.3
 
 git clone https://gitlab.com/everest/agent.git ~/everest_agent
 
