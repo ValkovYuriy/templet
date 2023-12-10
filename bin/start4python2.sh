@@ -8,12 +8,12 @@ PID_FILE=agent.pid
 if [ -f $PID_FILE ] && [ -f /proc/$(cat $PID_FILE)/status ]; then
    echo "Agent is already running"
 else
-    #if which python3 > /dev/null; then
-    #    PYTHON=python3
-    #else
+    if which python3 > /dev/null; then
+        PYTHON=python3
+    else
         # Find latest Python 2.x version
-    #    PYTHON=$(ls /usr/bin/python2.? | tail -n1)
-    #fi
+        PYTHON=$(ls /usr/bin/python2.? | tail -n1)
+    fi
     
     PYTHON=/srv/conda/envs/everest/bin/python3
     
