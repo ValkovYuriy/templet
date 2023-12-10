@@ -15,7 +15,7 @@ else
     #    PYTHON=$(ls /usr/bin/python2.? | tail -n1)
     #fi
     
-    PYTHON=/srv/conda/envs/everest/bin/python2
+    PYTHON=/srv/conda/envs/everest/bin/python3
     
     # Make sure Python is 2.6 or later
     PYTHON_OK=`$PYTHON -c 'import sys; print (sys.version_info >= (2, 6) and "1" or "0")'`
