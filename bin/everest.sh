@@ -1,6 +1,6 @@
 #!/bin/sh
 
-curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
+curl https://bootstrap.pypa.io/pip/3.2/get-pip.py -o get-pip.py
 /srv/conda/envs/everest/bin/python2 get-pip.py
 rm get-pip.py
 
